@@ -1,0 +1,318 @@
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+
+	boolean errorDetected;
+	
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	errorDetected = true;
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left).append(", ").append(((Symbol)info).right);
+        log.error(msg.toString());
+    }
+
+
+:}
+
+init with {:
+	errorDetected = false;
+:}
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+
+terminal PROG, LBRACE, RBRACE, SEMI, LPAREN, RPAREN, COMMA, PRINT, RETURN, PLUS, EQUAL, VOID;
+terminal DOUBLEDOT, EXTENDS, NEW, DOT, DIV, MINUS, RSWBREACE, MINUSMINUS, SWITCH, PLUSPLUS, CONST, AND;
+terminal LESS, READ, GREATER, DIFFERENT, WHILE, DO, CLASS, ELESS, CONTINUE, LSQBRACE, OR;
+terminal RSQBRACE, EGREATER, ENUM, MOD, MUL, BREAK, CASE, QUESTION, EQUALSTO;
+terminal String BOOL;
+terminal Integer NUMBER ;
+terminal String IDENT ;
+terminal String CHAR;
+terminal IF, ELSE;
+
+nonterminal MethodDeclList, VarDecl;
+nonterminal FormalParamList, FormalParamDecl, FormPars, ActualPars, ActualParamList; 
+nonterminal StatementList;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj  Program, ProgName, MethodDecl, MethodTypeName, MethodName, Method, ClassName, StaticDecl, ConstDeclaration; 
+nonterminal rs.etf.pp1.symboltable.concepts.Obj VarDeclaration, Designator, DesigAdditional, DesigName, DesigParts;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, ConstVal, VarType, MethodType; 
+nonterminal rs.etf.pp1.symboltable.concepts.Struct AssignOp, Expr, Factor, Term;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct CondTernary, Condition, CondTerm, CondFact;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct ExprNonTer, Ternary;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct AddTerm;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Statement, Matched, Unmatched, IfElseStm;
+
+nonterminal StaticDeclList, ConstDecl, ClassDecl, ConstDeclList, ClassDeclList, ConstType, ConstList;
+nonterminal AdditionalConstDecl, OptionalArray, AdditionalVarDecl, OptionalExtends, VarDeclList;
+nonterminal VarList, FieldList, Methods;
+nonterminal Statements, DesignatorStatement;
+nonterminal OptActPartsOpt, ActPartsOpt, ActParts;
+nonterminal FormParamList, FormParam, FormalParam, FormParams;
+nonterminal RelOp, AddOp, MulOp;
+nonterminal OptMinus;
+nonterminal ConditionNonTer, CondTermNonTer, CondFactNonTer, AddTermNonTer;
+nonterminal OptActPartsOptNonTer, ActPartsOptNonTer, ActPartsNonTer;
+nonterminal FactorNonTer, TermNonTer;
+nonterminal Cases, OptExpr, OptNumPrint;
+nonterminal DesignatorNonTer, DesigAdditionalNonTer, DesigPartsNonTer, DesignatorStatementNonTer;
+nonterminal Switch, DoWhile, Else, If, SwitchStart, Case, While;
+nonterminal Question, Doubledot;
+nonterminal GlobalStart, VarListComma, FormParamsComma, Field;
+
+
+Program 			::= (Program) PROG ProgName StaticDeclList GlobalStart MethodDeclList RBRACE;
+
+GlobalStart 		::= (GlobalStart) LBRACE;
+
+ProgName 			::= (ProgName) IDENT:progName;
+
+StaticDeclList 		::= (StatictDeclList) StaticDeclList StaticDecl
+					|	(NoStaticDecl);
+					
+StaticDecl 			::= (ConstDecls) CONST ConstType ConstList SEMI
+					|	(VarDecls) VarType VarList SEMI
+					|	error SEMI:l {: parser.report_error("Sintaksa greska deklaracije globalne promenljive na liniji " + lleft, null); :}
+					|	(ClassDecls) CLASS ClassName OptionalExtends FieldList Methods RBRACE;
+
+ConstType			::= (ConstType) Type;
+
+ClassName			::= (ClassName) IDENT:className;				
+
+ConstList 			::= (ConstListDecl) ConstList COMMA ConstDeclaration
+					|	(ConstD) ConstDeclaration; 
+										
+ConstDeclaration 	::= (ConstDeclaration) IDENT:constName EQUAL ConstVal:constVal;
+										
+VarList 			::= (VarListDecl) VarListComma VarDeclaration
+					|	(VarD) VarDeclaration;
+
+VarListComma		::= (VarListCom) VarList COMMA
+					| 	error COMMA:l {: parser.report_error("Sintaksa greska deklaracije promenljive na liniji " + lleft, null); :};
+
+VarType 			::= (VarType) Type;
+
+VarDeclaration 		::= (VarDeclaration) IDENT:varName OptionalArray;
+
+OptionalArray		::= (Array) LSQBRACE RSQBRACE
+					|	(NoArray);
+
+OptionalExtends 	::= (Extends) EXTENDS Type LBRACE
+					|	(NoExtends) LBRACE
+					| error LBRACE:l {: parser.report_error("Sintaksa greska extends na liniji " + lleft, null); :};
+					
+FieldList			::= (FieldDecls) Field FieldList
+					|	(NoFieldDecl);
+
+Field				::= (Fld)  VarType VarList SEMI 
+					| 	error SEMI:l {: parser.report_error("Sintaksa greska field decl na liniji " + lleft, null); :};
+
+
+Methods				::= (MethodsClass) LBRACE MethodDeclList RBRACE
+					|	(NoMethods);
+
+MethodDeclList		::= (MethodDeclarations) MethodDeclList Method
+					|	(NoMethodDecar);
+
+Method				::= (MethodDec) MethodTypeName FormParamList FieldList LBRACE Statements RBRACE;
+
+MethodTypeName		::= (MethodTypeName) MethodType IDENT:methName;
+
+FormParamList		::= (FormParamL) LPAREN FormParams RPAREN
+					|	(NoFromParam) LPAREN RPAREN
+					| 	LPAREN error RPAREN:l {: parser.report_error("Izvrsen oporavak do ) formalni parametar u liniji " + lleft, null); :} ;
+
+FormParams			::= (FormParametrs) FormParamsComma FormalParam
+					|	(FormPar) FormalParam;
+					
+FormParamsComma		::= (FormParamsCom) FormParams COMMA
+					| 	error COMMA:l {: parser.report_error("Izvrsen oporavak do , formalni parametar u liniji " + lleft, null); :};
+					
+FormalParam			::= (FormalPar) Type IDENT:formalParamName OptionalArray; 
+
+MethodType			::= (TVoid) VOID
+					|	(MType) Type;
+
+Type 				::= (Type) IDENT:typeName;
+
+ConstVal 			::= (NumConst) NUMBER
+					|	(CharConst) CHAR
+					|	(BoolConst) BOOL;
+
+
+
+
+
+
+
+
+Statement 			::= (MatchedStm) Matched
+					|	(UnmatchedStm) Unmatched;
+					/* |	 error SEMI:l {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null); :}; */
+
+Unmatched			::= (UnmatchedIf) If CondTernary Statement
+					|	(UnmatchedElse) If CondTernary Matched Else Unmatched; 
+
+If					::= (If) IF;
+Else 				::= (Else) ELSE;
+
+Matched 			::= (StatementD) DesignatorStatement SEMI
+					| 	error SEMI:l {: parser.report_error("Izvrsen oporavak zbog lose dodele do ; u liniji " + lleft, null); :}
+					|	(StatementIf) If CondTernary Matched Else Matched
+					|	(StatementDo) DoWhile Statement While CondTernary SEMI
+					|	(StatementSwitch) SwitchStart LBRACE Cases RBRACE
+					|	(StatementBreak) BREAK SEMI
+					|	(StatementContinue) CONTINUE SEMI
+					|	(StatementReturn) RETURN OptExpr SEMI
+					| 	(StatementRead) READ LPAREN Designator RPAREN SEMI
+					|	(StatementPrint) PRINT LPAREN Expr OptNumPrint RPAREN SEMI
+					|	(StatementStatement) LBRACE Statements RBRACE;
+					
+SwitchStart 		::= (SwitchStart) Switch LPAREN Expr RPAREN;
+					
+Switch				::= (Switch) SWITCH;
+
+DoWhile 			::= (DoWhile) DO;
+
+While				::= (While) WHILE;
+
+Cases 				::= (CaseC) Cases Case NUMBER DOUBLEDOT Statements
+					|	(NoCases);
+					
+Case				::= (Case) CASE;
+
+Statements			::= (StatementsNew) Statements Statement
+					|	(NoStatements);
+
+DesignatorStatement ::= (DesigAssign) Designator AssignOp Expr
+					| 	(DesigMethod) Designator LPAREN ActPartsOpt RPAREN 
+					|	(DesigPlusPlus) Designator PLUSPLUS
+					|	(DesigMinusMinus) Designator MINUSMINUS;
+
+Designator			::= (Designator) DesigName DesigAdditional; 
+
+DesigName			::= (DesigName) IDENT:desigName;
+
+DesigAdditional		::= (DesigAddit) DesigAdditional DesigParts
+					|	(NoDesigAddit);
+
+DesigParts			::= (DesigId) DOT IDENT:partName
+					|	(DesigArr) LSQBRACE Expr RSQBRACE;
+
+OptActPartsOpt		::= (OActPO) LPAREN ActPartsOpt RPAREN
+					|	(NoOptActParts);
+
+ActPartsOpt			::= (ActPartsO) ActParts
+					|	(NoActParts);
+
+ActParts 			::= (ActPartsC) ActParts COMMA Expr
+					|	(ActPartsE) Expr;
+					
+OptExpr				::= (ExprO) Expr
+					| 	(NoExpr);
+
+AddTerm				::= (AddTermA) AddTerm AddOp Term
+					|	(NoAddTerm);
+
+Factor				::= (FactorDes) Designator OptActPartsOpt
+					|	(FactorConst) ConstVal
+					| 	(FactorNewClass) NEW Type
+					|	(FactorNewArray) NEW Type LSQBRACE Expr RSQBRACE
+					|	(FactorExpr) LPAREN Expr RPAREN;
+
+Term 				::= (TermM) Term MulOp Factor 
+					|	(TermF) Factor;
+
+
+
+CondTernary			::=	(CondCond) LPAREN Condition RPAREN
+					|	(CondTer) LPAREN Ternary RPAREN
+					|	error RPAREN:l  {: parser.report_error("Sintaksna greska u uslovu na liniji " + lleft, null); :};
+
+Condition 			::= (ConditionC) Condition OR CondTerm
+					|	(ConditionT) CondTerm;
+
+CondTerm			::= (CondTermC) CondTerm AND CondFact
+					|	(CondTermT) CondFact;
+
+CondFact 			::= (CondFactE) ExprNonTer
+					|	(CondFactR) ExprNonTer RelOp ExprNonTer;
+					
+Expr 				::= (ExprT) ExprNonTer
+					|	(ExprCond) Ternary;		
+					
+ExprNonTer			::= (ExprNonT) OptMinus Term AddTerm;	
+
+Ternary				::= (Ternary) Condition Question Expr Doubledot Expr;
+
+Question			::= (Question) QUESTION;
+
+Doubledot			::= (Doubledot) DOUBLEDOT;
+					
+
+
+
+
+
+
+OptNumPrint			::= (NumberPrint) COMMA NUMBER
+					|	(NoNumPrint);
+
+
+
+
+
+
+OptMinus 			::= (OptMin) MINUS
+					|	(NoMinus);
+
+
+
+
+
+AssignOp			::= (AssignOpE) EQUAL;
+
+RelOp				::= (RelOpE) EQUALSTO 
+					|	(RelOpD) DIFFERENT
+					|	(RelOpL) LESS
+					|	(RelOpEL) ELESS
+					|	(RelOpG) GREATER
+					|	(RelOpEG) EGREATER; 
+
+AddOp				::= (AddOpP) PLUS
+					|	(AddOpM) MINUS;
+
+MulOp				::= (MulOpM) MUL
+					| 	(MulOpD) DIV
+					|	(MulOpMod) MOD;
+
+

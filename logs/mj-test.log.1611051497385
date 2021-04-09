@@ -1,0 +1,82 @@
+INFO  11:17:00,427 - Compiling source file: C:\workspace\MJCompiler\test\program.mj
+INFO  11:17:00,484 - #2 program
+INFO  11:17:00,484 - #48 mj
+INFO  11:17:00,484 - #48 int
+INFO  11:17:00,485 - #48 mika
+INFO  11:17:00,486 - #47 5
+ERROR 11:17:00,487 - 
+Sintaksna greska na liniji 3, 9
+INFO  11:17:00,487 - #8 ,
+INFO  11:17:00,487 - #48 zika
+INFO  11:17:00,487 - #8 ,
+INFO  11:17:00,488 - #48 ika
+ERROR 11:17:00,488 - Sintaksa greska deklaracije promenljive na liniji 3
+INFO  11:17:00,491 - #7 )
+ERROR 11:17:00,491 - 
+Sintaksna greska na liniji 3, 23
+INFO  11:17:00,491 - #5 ;
+INFO  11:17:00,491 - #3 {
+INFO  11:17:00,492 - #13 void
+INFO  11:17:00,492 - #48 f
+INFO  11:17:00,492 - #6 (
+INFO  11:17:00,493 - #8 ,
+INFO  11:17:00,499 - #48 int
+INFO  11:17:00,499 - #48 a
+INFO  11:17:00,499 - #7 )
+INFO  11:17:00,499 - #3 {
+INFO  11:17:00,499 - #10 return
+INFO  11:17:00,499 - #5 ;
+INFO  11:17:00,499 - #4 }
+INFO  11:17:00,499 - #48 int
+INFO  11:17:00,500 - #48 fi
+INFO  11:17:00,500 - #6 (
+INFO  11:17:00,500 - #7 )
+INFO  11:17:00,500 - #3 {
+INFO  11:17:00,500 - #10 return
+INFO  11:17:00,500 - #47 2
+INFO  11:17:00,500 - #5 ;
+INFO  11:17:00,501 - #4 }
+INFO  11:17:00,501 - #48 char
+INFO  11:17:00,501 - #48 fc
+INFO  11:17:00,501 - #6 (
+INFO  11:17:00,501 - #7 )
+INFO  11:17:00,501 - #3 {
+INFO  11:17:00,501 - #10 return
+INFO  11:17:00,501 - #49 'c'
+INFO  11:17:00,501 - #5 ;
+INFO  11:17:00,502 - #4 }
+INFO  11:17:00,502 - #13 void
+INFO  11:17:00,502 - #48 main
+INFO  11:17:00,502 - #6 (
+INFO  11:17:00,502 - #7 )
+INFO  11:17:00,502 - #48 int
+INFO  11:17:00,503 - #48 i
+INFO  11:17:00,503 - #8 ,
+INFO  11:17:00,503 - #48 j
+INFO  11:17:00,503 - #5 ;
+INFO  11:17:00,503 - #48 int
+ERROR 11:17:00,503 - Sintaksa greska deklaracije promenljive na liniji 3
+INFO  11:17:00,503 - #48 niz
+INFO  11:17:00,503 - #35 [
+INFO  11:17:00,503 - #37 ]
+INFO  11:17:00,503 - #5 ;
+INFO  11:17:00,504 - #48 bool
+INFO  11:17:00,504 - #48 b
+INFO  11:17:00,504 - #5 ;
+INFO  11:17:00,505 - #3 {
+INFO  11:17:00,505 - #50 if
+ERROR 11:17:00,505 - 
+Sintaksna greska na liniji 22, 2
+INFO  11:17:00,505 - #6 (
+INFO  11:17:00,505 - #48 b
+INFO  11:17:00,505 - #11 +
+INFO  11:17:00,505 - #7 )
+INFO  11:17:00,505 - #48 i
+INFO  11:17:00,505 - #12 =
+INFO  11:17:00,505 - #47 2
+INFO  11:17:00,506 - #11 +
+INFO  11:17:00,506 - #5 ;
+INFO  11:17:00,506 - #4 }
+INFO  11:17:00,506 - #4 }
+ERROR 11:17:00,506 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 28, 1
+INFO  11:17:00,506 - Postoji sintaksna greska

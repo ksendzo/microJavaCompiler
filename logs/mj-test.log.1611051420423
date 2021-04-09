@@ -1,0 +1,78 @@
+INFO  11:16:41,100 - Compiling source file: C:\workspace\MJCompiler\test\program.mj
+INFO  11:16:41,155 - #2 program
+INFO  11:16:41,156 - #48 mj
+INFO  11:16:41,156 - #48 int
+INFO  11:16:41,157 - #48 mika
+INFO  11:16:41,158 - #8 ,
+INFO  11:16:41,160 - #48 zika
+INFO  11:16:41,160 - #8 ,
+INFO  11:16:41,160 - #48 ika
+INFO  11:16:41,161 - #7 )
+ERROR 11:16:41,161 - 
+Sintaksna greska na liniji 3, 23
+INFO  11:16:41,162 - #5 ;
+INFO  11:16:41,162 - #3 {
+INFO  11:16:41,162 - #13 void
+INFO  11:16:41,163 - #48 f
+INFO  11:16:41,164 - #6 (
+INFO  11:16:41,164 - #8 ,
+INFO  11:16:41,164 - #48 int
+INFO  11:16:41,164 - #48 a
+INFO  11:16:41,164 - #7 )
+INFO  11:16:41,165 - #3 {
+INFO  11:16:41,165 - #10 return
+INFO  11:16:41,165 - #5 ;
+INFO  11:16:41,172 - #4 }
+INFO  11:16:41,172 - #48 int
+INFO  11:16:41,172 - #48 fi
+INFO  11:16:41,172 - #6 (
+INFO  11:16:41,172 - #7 )
+INFO  11:16:41,172 - #3 {
+INFO  11:16:41,172 - #10 return
+INFO  11:16:41,173 - #47 2
+INFO  11:16:41,173 - #5 ;
+INFO  11:16:41,173 - #4 }
+INFO  11:16:41,173 - #48 char
+INFO  11:16:41,173 - #48 fc
+INFO  11:16:41,173 - #6 (
+INFO  11:16:41,173 - #7 )
+INFO  11:16:41,174 - #3 {
+INFO  11:16:41,174 - #10 return
+INFO  11:16:41,174 - #49 'c'
+INFO  11:16:41,174 - #5 ;
+INFO  11:16:41,174 - #4 }
+INFO  11:16:41,174 - #13 void
+INFO  11:16:41,174 - #48 main
+INFO  11:16:41,174 - #6 (
+INFO  11:16:41,174 - #7 )
+INFO  11:16:41,174 - #48 int
+INFO  11:16:41,175 - #48 i
+INFO  11:16:41,175 - #8 ,
+INFO  11:16:41,175 - #48 j
+INFO  11:16:41,175 - #5 ;
+INFO  11:16:41,175 - #48 int
+ERROR 11:16:41,175 - Sintaksa greska deklaracije promenljive na liniji 3
+INFO  11:16:41,176 - #48 niz
+INFO  11:16:41,176 - #35 [
+INFO  11:16:41,176 - #37 ]
+INFO  11:16:41,176 - #5 ;
+INFO  11:16:41,177 - #48 bool
+INFO  11:16:41,177 - #48 b
+INFO  11:16:41,177 - #5 ;
+INFO  11:16:41,177 - #3 {
+INFO  11:16:41,177 - #50 if
+ERROR 11:16:41,177 - 
+Sintaksna greska na liniji 22, 2
+INFO  11:16:41,177 - #6 (
+INFO  11:16:41,178 - #48 b
+INFO  11:16:41,178 - #11 +
+INFO  11:16:41,178 - #7 )
+INFO  11:16:41,179 - #48 i
+INFO  11:16:41,179 - #12 =
+INFO  11:16:41,179 - #47 2
+INFO  11:16:41,179 - #11 +
+INFO  11:16:41,179 - #5 ;
+INFO  11:16:41,179 - #4 }
+INFO  11:16:41,179 - #4 }
+ERROR 11:16:41,180 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 28, 1
+INFO  11:16:41,180 - Postoji sintaksna greska

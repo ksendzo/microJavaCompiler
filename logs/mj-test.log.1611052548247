@@ -1,0 +1,70 @@
+INFO  11:35:14,838 - Compiling source file: C:\workspace\MJCompiler\test\program.mj
+INFO  11:35:14,903 - #2 program
+INFO  11:35:14,904 - #48 mj
+INFO  11:35:14,904 - #32 class
+INFO  11:35:14,905 - #48 Klasa
+INFO  11:35:14,905 - #3 {
+INFO  11:35:14,906 - #48 int
+INFO  11:35:14,907 - #48 i
+INFO  11:35:14,908 - #48 i
+ERROR 11:35:14,909 - 
+Sintaksna greska na liniji 4, 7
+INFO  11:35:14,909 - #5 ;
+INFO  11:35:14,909 - #48 bla
+INFO  11:35:14,909 - #3 {
+INFO  11:35:14,910 - #4 }
+INFO  11:35:14,910 - #4 }
+INFO  11:35:14,911 - #3 {
+INFO  11:35:14,911 - #13 void
+INFO  11:35:14,911 - #48 f
+INFO  11:35:14,911 - #6 (
+INFO  11:35:14,911 - #48 int
+INFO  11:35:14,912 - #48 a
+INFO  11:35:14,912 - #7 )
+INFO  11:35:14,912 - #3 {
+INFO  11:35:14,918 - #10 return
+INFO  11:35:14,919 - #5 ;
+INFO  11:35:14,919 - #4 }
+INFO  11:35:14,919 - #48 int
+INFO  11:35:14,919 - #48 fi
+INFO  11:35:14,919 - #6 (
+INFO  11:35:14,919 - #7 )
+INFO  11:35:14,919 - #3 {
+INFO  11:35:14,919 - #10 return
+INFO  11:35:14,919 - #47 2
+INFO  11:35:14,920 - #5 ;
+INFO  11:35:14,920 - #4 }
+INFO  11:35:14,920 - #48 char
+INFO  11:35:14,920 - #48 fc
+INFO  11:35:14,920 - #6 (
+INFO  11:35:14,920 - #7 )
+INFO  11:35:14,920 - #3 {
+INFO  11:35:14,920 - #10 return
+INFO  11:35:14,920 - #49 'c'
+INFO  11:35:14,920 - #5 ;
+INFO  11:35:14,921 - #4 }
+INFO  11:35:14,921 - #13 void
+INFO  11:35:14,921 - #48 main
+INFO  11:35:14,921 - #6 (
+INFO  11:35:14,921 - #7 )
+INFO  11:35:14,921 - #48 int
+INFO  11:35:14,921 - #48 i
+INFO  11:35:14,921 - #8 ,
+INFO  11:35:14,922 - #48 j
+INFO  11:35:14,922 - #5 ;
+INFO  11:35:14,922 - #48 int
+ERROR 11:35:14,922 - Sintaksa greska deklaracije promenljive na liniji 4
+INFO  11:35:14,924 - #48 niz
+INFO  11:35:14,924 - #35 [
+INFO  11:35:14,924 - #37 ]
+INFO  11:35:14,924 - #5 ;
+INFO  11:35:14,925 - #48 bool
+INFO  11:35:14,925 - #48 b
+INFO  11:35:14,925 - #5 ;
+INFO  11:35:14,926 - #3 {
+INFO  11:35:14,927 - #4 }
+INFO  11:35:14,927 - #4 }
+ERROR 11:35:14,928 - 
+Sintaksna greska na liniji 29, 1
+ERROR 11:35:14,928 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 29, 1
+INFO  11:35:14,928 - Postoji sintaksna greska

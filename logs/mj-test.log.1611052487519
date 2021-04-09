@@ -1,0 +1,67 @@
+INFO  11:25:20,585 - Compiling source file: C:\workspace\MJCompiler\test\program.mj
+INFO  11:25:20,640 - #2 program
+INFO  11:25:20,640 - #48 mj
+INFO  11:25:20,641 - #32 class
+INFO  11:25:20,642 - #48 Klasa
+INFO  11:25:20,642 - #3 {
+INFO  11:25:20,642 - #48 int
+INFO  11:25:20,643 - #48 i
+INFO  11:25:20,645 - #48 i
+ERROR 11:25:20,645 - 
+Sintaksna greska na liniji 4, 7
+INFO  11:25:20,645 - #5 ;
+INFO  11:25:20,645 - #4 }
+INFO  11:25:20,646 - #3 {
+INFO  11:25:20,646 - #13 void
+INFO  11:25:20,647 - #48 f
+INFO  11:25:20,647 - #6 (
+INFO  11:25:20,647 - #48 int
+INFO  11:25:20,647 - #48 a
+INFO  11:25:20,647 - #7 )
+INFO  11:25:20,647 - #3 {
+INFO  11:25:20,648 - #10 return
+INFO  11:25:20,648 - #5 ;
+INFO  11:25:20,648 - #4 }
+INFO  11:25:20,655 - #48 int
+INFO  11:25:20,655 - #48 fi
+INFO  11:25:20,655 - #6 (
+INFO  11:25:20,655 - #7 )
+INFO  11:25:20,655 - #3 {
+INFO  11:25:20,655 - #10 return
+INFO  11:25:20,655 - #47 2
+INFO  11:25:20,655 - #5 ;
+INFO  11:25:20,655 - #4 }
+INFO  11:25:20,656 - #48 char
+INFO  11:25:20,656 - #48 fc
+INFO  11:25:20,656 - #6 (
+INFO  11:25:20,656 - #7 )
+INFO  11:25:20,656 - #3 {
+INFO  11:25:20,656 - #10 return
+INFO  11:25:20,656 - #49 'c'
+INFO  11:25:20,656 - #5 ;
+INFO  11:25:20,657 - #4 }
+INFO  11:25:20,657 - #13 void
+INFO  11:25:20,657 - #48 main
+INFO  11:25:20,657 - #6 (
+INFO  11:25:20,657 - #7 )
+INFO  11:25:20,657 - #48 int
+INFO  11:25:20,657 - #48 i
+INFO  11:25:20,657 - #8 ,
+INFO  11:25:20,657 - #48 j
+INFO  11:25:20,657 - #5 ;
+INFO  11:25:20,657 - #48 int
+ERROR 11:25:20,658 - Sintaksa greska deklaracije promenljive na liniji 4
+ERROR 11:25:20,659 - 
+Sintaksna greska na liniji 23, 24
+INFO  11:25:20,659 - #48 niz
+INFO  11:25:20,660 - #35 [
+INFO  11:25:20,660 - #37 ]
+INFO  11:25:20,660 - #5 ;
+INFO  11:25:20,660 - #48 bool
+INFO  11:25:20,660 - #48 b
+INFO  11:25:20,660 - #5 ;
+INFO  11:25:20,660 - #3 {
+INFO  11:25:20,660 - #4 }
+INFO  11:25:20,660 - #4 }
+ERROR 11:25:20,661 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 28, 1
+INFO  11:25:20,661 - Postoji sintaksna greska

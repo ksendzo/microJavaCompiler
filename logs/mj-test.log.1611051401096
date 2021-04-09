@@ -1,0 +1,73 @@
+INFO  11:16:03,150 - Compiling source file: C:\workspace\MJCompiler\test\program.mj
+INFO  11:16:03,208 - #2 program
+INFO  11:16:03,208 - #48 mj
+INFO  11:16:03,208 - #3 {
+INFO  11:16:03,209 - #13 void
+INFO  11:16:03,210 - #48 f
+INFO  11:16:03,211 - #6 (
+INFO  11:16:03,212 - #8 ,
+ERROR 11:16:03,212 - 
+Sintaksna greska na liniji 5, 8
+INFO  11:16:03,212 - #48 int
+INFO  11:16:03,212 - #48 a
+INFO  11:16:03,213 - #7 )
+ERROR 11:16:03,213 - Izvrsen oporavak do , formalni parametar u liniji 5
+INFO  11:16:03,217 - #3 {
+INFO  11:16:03,218 - #10 return
+INFO  11:16:03,219 - #5 ;
+INFO  11:16:03,220 - #4 }
+INFO  11:16:03,220 - #48 int
+INFO  11:16:03,221 - #48 fi
+INFO  11:16:03,221 - #6 (
+INFO  11:16:03,221 - #7 )
+INFO  11:16:03,221 - #3 {
+INFO  11:16:03,228 - #10 return
+INFO  11:16:03,228 - #47 2
+INFO  11:16:03,229 - #5 ;
+INFO  11:16:03,230 - #4 }
+INFO  11:16:03,231 - #48 char
+INFO  11:16:03,231 - #48 fc
+INFO  11:16:03,231 - #6 (
+INFO  11:16:03,231 - #7 )
+INFO  11:16:03,232 - #3 {
+INFO  11:16:03,233 - #10 return
+INFO  11:16:03,233 - #49 'c'
+INFO  11:16:03,233 - #5 ;
+INFO  11:16:03,234 - #4 }
+INFO  11:16:03,234 - #13 void
+INFO  11:16:03,234 - #48 main
+INFO  11:16:03,234 - #6 (
+INFO  11:16:03,234 - #7 )
+INFO  11:16:03,234 - #48 int
+INFO  11:16:03,234 - #48 i
+INFO  11:16:03,235 - #8 ,
+INFO  11:16:03,236 - #48 j
+INFO  11:16:03,237 - #5 ;
+INFO  11:16:03,237 - #48 int
+INFO  11:16:03,237 - #48 niz
+INFO  11:16:03,237 - #35 [
+INFO  11:16:03,237 - #37 ]
+INFO  11:16:03,237 - #5 ;
+INFO  11:16:03,238 - #48 bool
+INFO  11:16:03,238 - #48 b
+INFO  11:16:03,238 - #5 ;
+INFO  11:16:03,238 - #3 {
+INFO  11:16:03,239 - #50 if
+INFO  11:16:03,239 - #6 (
+INFO  11:16:03,240 - #48 b
+INFO  11:16:03,240 - #11 +
+INFO  11:16:03,242 - #7 )
+ERROR 11:16:03,242 - 
+Sintaksna greska na liniji 20, 8
+INFO  11:16:03,242 - #48 i
+INFO  11:16:03,242 - #12 =
+INFO  11:16:03,243 - #47 2
+ERROR 11:16:03,243 - Sintaksna greska u uslovu na liniji 20
+INFO  11:16:03,244 - #11 +
+INFO  11:16:03,244 - #5 ;
+ERROR 11:16:03,244 - 
+Sintaksna greska na liniji 21, 11
+INFO  11:16:03,244 - #4 }
+INFO  11:16:03,244 - #4 }
+ERROR 11:16:03,245 - Izvrsen oporavak zbog lose dodele do ; u liniji 21
+INFO  11:16:03,246 - Postoji sintaksna greska

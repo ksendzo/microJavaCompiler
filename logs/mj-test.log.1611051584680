@@ -1,0 +1,64 @@
+INFO  11:19:27,654 - Compiling source file: C:\workspace\MJCompiler\test\program.mj
+INFO  11:19:27,712 - #2 program
+INFO  11:19:27,713 - #48 mj
+INFO  11:19:27,713 - #48 int
+INFO  11:19:27,714 - #48 mika
+INFO  11:19:27,715 - #47 5
+ERROR 11:19:27,715 - 
+Sintaksna greska na liniji 3, 9
+INFO  11:19:27,715 - #8 ,
+INFO  11:19:27,716 - #48 zika
+INFO  11:19:27,716 - #8 ,
+INFO  11:19:27,717 - #48 ika
+ERROR 11:19:27,717 - Sintaksa greska deklaracije promenljive na liniji 3
+INFO  11:19:27,720 - #5 ;
+INFO  11:19:27,720 - #3 {
+INFO  11:19:27,720 - #13 void
+INFO  11:19:27,722 - #48 f
+INFO  11:19:27,723 - #6 (
+INFO  11:19:27,723 - #48 int
+INFO  11:19:27,723 - #48 a
+INFO  11:19:27,724 - #7 )
+INFO  11:19:27,724 - #3 {
+INFO  11:19:27,731 - #10 return
+INFO  11:19:27,732 - #5 ;
+INFO  11:19:27,733 - #4 }
+INFO  11:19:27,733 - #48 int
+INFO  11:19:27,733 - #48 fi
+INFO  11:19:27,734 - #6 (
+INFO  11:19:27,734 - #7 )
+INFO  11:19:27,734 - #3 {
+INFO  11:19:27,735 - #10 return
+INFO  11:19:27,735 - #47 2
+INFO  11:19:27,736 - #5 ;
+INFO  11:19:27,737 - #4 }
+INFO  11:19:27,737 - #48 char
+INFO  11:19:27,737 - #48 fc
+INFO  11:19:27,737 - #6 (
+INFO  11:19:27,737 - #7 )
+INFO  11:19:27,737 - #3 {
+INFO  11:19:27,737 - #10 return
+INFO  11:19:27,737 - #49 'c'
+INFO  11:19:27,738 - #5 ;
+INFO  11:19:27,738 - #4 }
+INFO  11:19:27,738 - #13 void
+INFO  11:19:27,738 - #48 main
+INFO  11:19:27,738 - #6 (
+INFO  11:19:27,738 - #7 )
+INFO  11:19:27,738 - #48 int
+INFO  11:19:27,738 - #48 i
+INFO  11:19:27,738 - #8 ,
+INFO  11:19:27,738 - #48 j
+INFO  11:19:27,739 - #5 ;
+INFO  11:19:27,739 - #48 int
+INFO  11:19:27,739 - #48 niz
+INFO  11:19:27,739 - #35 [
+INFO  11:19:27,739 - #37 ]
+INFO  11:19:27,739 - #5 ;
+INFO  11:19:27,740 - #48 bool
+INFO  11:19:27,740 - #48 b
+INFO  11:19:27,740 - #5 ;
+INFO  11:19:27,741 - #3 {
+INFO  11:19:27,741 - #4 }
+INFO  11:19:27,741 - #4 }
+INFO  11:19:27,743 - Postoji sintaksna greska

@@ -1,0 +1,52 @@
+INFO  11:13:26,673 - Compiling source file: C:\workspace\MJCompiler\test\program.mj
+INFO  11:13:26,725 - #2 program
+INFO  11:13:26,725 - #48 mj
+INFO  11:13:26,725 - #3 {
+INFO  11:13:26,727 - #13 void
+INFO  11:13:26,728 - #48 f
+INFO  11:13:26,729 - #6 (
+INFO  11:13:26,729 - #44 ?
+ERROR 11:13:26,730 - 
+Sintaksna greska na liniji 5, 8
+INFO  11:13:26,730 - #7 )
+INFO  11:13:26,730 - #3 {
+INFO  11:13:26,730 - #10 return
+INFO  11:13:26,731 - #5 ;
+INFO  11:13:26,731 - #4 }
+INFO  11:13:26,731 - #48 int
+INFO  11:13:26,731 - #48 fi
+INFO  11:13:26,731 - #6 (
+INFO  11:13:26,732 - #7 )
+INFO  11:13:26,732 - #3 {
+INFO  11:13:26,732 - #10 return
+INFO  11:13:26,732 - #47 2
+INFO  11:13:26,732 - #5 ;
+INFO  11:13:26,732 - #4 }
+INFO  11:13:26,740 - #48 char
+INFO  11:13:26,740 - #48 fc
+INFO  11:13:26,740 - #6 (
+INFO  11:13:26,740 - #7 )
+INFO  11:13:26,740 - #3 {
+INFO  11:13:26,740 - #10 return
+INFO  11:13:26,740 - #49 'c'
+INFO  11:13:26,740 - #5 ;
+INFO  11:13:26,741 - #4 }
+INFO  11:13:26,741 - #13 void
+INFO  11:13:26,741 - #48 main
+INFO  11:13:26,741 - #6 (
+INFO  11:13:26,741 - #7 )
+INFO  11:13:26,741 - #48 int
+INFO  11:13:26,741 - #48 i
+INFO  11:13:26,741 - #8 ,
+INFO  11:13:26,742 - #48 j
+INFO  11:13:26,742 - #5 ;
+INFO  11:13:26,742 - #48 int
+INFO  11:13:26,742 - #48 niz
+INFO  11:13:26,742 - #35 [
+INFO  11:13:26,742 - #37 ]
+INFO  11:13:26,742 - #5 ;
+INFO  11:13:26,742 - #3 {
+INFO  11:13:26,742 - #4 }
+INFO  11:13:26,742 - #4 }
+ERROR 11:13:26,743 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 24, 1
+INFO  11:13:26,743 - Postoji sintaksna greska

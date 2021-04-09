@@ -1,0 +1,19 @@
+INFO  11:21:42,929 - Compiling source file: C:\workspace\MJCompiler\test\program.mj
+INFO  11:21:42,984 - #2 program
+INFO  11:21:42,984 - #48 mj
+INFO  11:21:42,984 - #48 int
+INFO  11:21:42,986 - #48 mika
+INFO  11:21:42,987 - #47 5
+ERROR 11:21:42,987 - 
+Sintaksna greska na liniji 3, 9
+INFO  11:21:42,988 - #8 ,
+INFO  11:21:42,988 - #48 zika
+INFO  11:21:42,988 - #47 6
+INFO  11:21:42,989 - #8 ,
+INFO  11:21:42,989 - #48 ika
+INFO  11:21:42,989 - #47 6
+INFO  11:21:42,989 - #48 s
+INFO  11:21:42,989 - #5 ;
+INFO  11:21:42,990 - #3 {
+INFO  11:21:42,990 - #13 void
+INFO  11:21:42,990 - #48 f

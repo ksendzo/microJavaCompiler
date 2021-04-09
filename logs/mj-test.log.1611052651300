@@ -1,0 +1,25 @@
+INFO  11:37:16,298 - Compiling source file: C:\workspace\MJCompiler\test\program.mj
+INFO  11:37:16,357 - #2 program
+INFO  11:37:16,357 - #48 mj
+INFO  11:37:16,357 - #32 class
+INFO  11:37:16,359 - #48 Klasa
+INFO  11:37:16,359 - #3 {
+INFO  11:37:16,359 - #48 int
+INFO  11:37:16,360 - #48 i
+INFO  11:37:16,361 - #48 i
+ERROR 11:37:16,362 - 
+Sintaksna greska na liniji 4, 7
+INFO  11:37:16,362 - #5 ;
+INFO  11:37:16,362 - #3 {
+INFO  11:37:16,362 - #4 }
+INFO  11:37:16,363 - #4 }
+INFO  11:37:16,363 - #3 {
+INFO  11:37:16,363 - #13 void
+INFO  11:37:16,364 - #48 main
+INFO  11:37:16,364 - #6 (
+INFO  11:37:16,364 - #7 )
+INFO  11:37:16,364 - #3 {
+INFO  11:37:16,364 - #4 }
+INFO  11:37:16,364 - #4 }
+ERROR 11:37:16,365 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 17, 1
+INFO  11:37:16,365 - Postoji sintaksna greska

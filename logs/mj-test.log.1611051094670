@@ -1,0 +1,219 @@
+INFO  11:11:18,514 - Compiling source file: C:\workspace\MJCompiler\test\program.mj
+INFO  11:11:18,562 - #2 program
+INFO  11:11:18,563 - #48 mj
+INFO  11:11:18,563 - #3 {
+INFO  11:11:18,564 - #13 void
+INFO  11:11:18,566 - #48 f
+INFO  11:11:18,566 - #6 (
+INFO  11:11:18,569 - #7 )
+INFO  11:11:18,569 - #3 {
+INFO  11:11:18,570 - #10 return
+INFO  11:11:18,571 - #5 ;
+INFO  11:11:18,572 - #4 }
+INFO  11:11:18,572 - #48 int
+INFO  11:11:18,573 - #48 fi
+INFO  11:11:18,574 - #6 (
+INFO  11:11:18,575 - #7 )
+INFO  11:11:18,575 - #3 {
+INFO  11:11:18,575 - #10 return
+INFO  11:11:18,575 - #47 2
+INFO  11:11:18,576 - #5 ;
+INFO  11:11:18,577 - #4 }
+INFO  11:11:18,578 - #48 char
+INFO  11:11:18,578 - #48 fc
+INFO  11:11:18,578 - #6 (
+INFO  11:11:18,584 - #7 )
+INFO  11:11:18,584 - #3 {
+INFO  11:11:18,584 - #10 return
+INFO  11:11:18,584 - #49 'c'
+INFO  11:11:18,584 - #5 ;
+INFO  11:11:18,584 - #4 }
+INFO  11:11:18,585 - #13 void
+INFO  11:11:18,585 - #48 main
+INFO  11:11:18,585 - #6 (
+INFO  11:11:18,585 - #7 )
+INFO  11:11:18,585 - #48 int
+INFO  11:11:18,585 - #48 i
+INFO  11:11:18,586 - #8 ,
+INFO  11:11:18,589 - #48 j
+INFO  11:11:18,589 - #5 ;
+INFO  11:11:18,589 - #48 int
+INFO  11:11:18,590 - #48 niz
+INFO  11:11:18,590 - #35 [
+INFO  11:11:18,590 - #37 ]
+INFO  11:11:18,590 - #5 ;
+INFO  11:11:18,592 - #3 {
+INFO  11:11:18,593 - #4 }
+INFO  11:11:18,593 - #4 }
+INFO  11:11:18,602 - Program(
+  ProgName(
+   mj
+  ) [ProgName]
+  NoStaticDecl(
+  ) [NoStaticDecl]
+  GlobalStart(
+  ) [GlobalStart]
+  MethodDeclarations(
+    MethodDeclarations(
+      MethodDeclarations(
+        MethodDeclarations(
+          NoMethodDecar(
+          ) [NoMethodDecar]
+          MethodDec(
+            MethodTypeName(
+              TVoid(
+              ) [TVoid]
+             f
+            ) [MethodTypeName]
+            NoFromParam(
+            ) [NoFromParam]
+            NoFieldDecl(
+            ) [NoFieldDecl]
+            StatementsNew(
+              NoStatements(
+              ) [NoStatements]
+              MatchedStm(
+                StatementReturn(
+                  NoExpr(
+                  ) [NoExpr]
+                ) [StatementReturn]
+              ) [MatchedStm]
+            ) [StatementsNew]
+          ) [MethodDec]
+        ) [MethodDeclarations]
+        MethodDec(
+          MethodTypeName(
+            MType(
+              Type(
+               int
+              ) [Type]
+            ) [MType]
+           fi
+          ) [MethodTypeName]
+          NoFromParam(
+          ) [NoFromParam]
+          NoFieldDecl(
+          ) [NoFieldDecl]
+          StatementsNew(
+            NoStatements(
+            ) [NoStatements]
+            MatchedStm(
+              StatementReturn(
+                ExprO(
+                  ExprT(
+                    ExprNonT(
+                      NoMinus(
+                      ) [NoMinus]
+                      TermF(
+                        FactorConst(
+                          NumConst(
+                           2
+                          ) [NumConst]
+                        ) [FactorConst]
+                      ) [TermF]
+                      NoAddTerm(
+                      ) [NoAddTerm]
+                    ) [ExprNonT]
+                  ) [ExprT]
+                ) [ExprO]
+              ) [StatementReturn]
+            ) [MatchedStm]
+          ) [StatementsNew]
+        ) [MethodDec]
+      ) [MethodDeclarations]
+      MethodDec(
+        MethodTypeName(
+          MType(
+            Type(
+             char
+            ) [Type]
+          ) [MType]
+         fc
+        ) [MethodTypeName]
+        NoFromParam(
+        ) [NoFromParam]
+        NoFieldDecl(
+        ) [NoFieldDecl]
+        StatementsNew(
+          NoStatements(
+          ) [NoStatements]
+          MatchedStm(
+            StatementReturn(
+              ExprO(
+                ExprT(
+                  ExprNonT(
+                    NoMinus(
+                    ) [NoMinus]
+                    TermF(
+                      FactorConst(
+                        CharConst(
+                         'c'
+                        ) [CharConst]
+                      ) [FactorConst]
+                    ) [TermF]
+                    NoAddTerm(
+                    ) [NoAddTerm]
+                  ) [ExprNonT]
+                ) [ExprT]
+              ) [ExprO]
+            ) [StatementReturn]
+          ) [MatchedStm]
+        ) [StatementsNew]
+      ) [MethodDec]
+    ) [MethodDeclarations]
+    MethodDec(
+      MethodTypeName(
+        TVoid(
+        ) [TVoid]
+       main
+      ) [MethodTypeName]
+      NoFromParam(
+      ) [NoFromParam]
+      FieldDecls(
+        VarType(
+          Type(
+           int
+          ) [Type]
+        ) [VarType]
+        VarListDecl(
+          VarListCom(
+            VarD(
+              VarDeclaration(
+               i
+                NoArray(
+                ) [NoArray]
+              ) [VarDeclaration]
+            ) [VarD]
+          ) [VarListCom]
+          VarDeclaration(
+           j
+            NoArray(
+            ) [NoArray]
+          ) [VarDeclaration]
+        ) [VarListDecl]
+        FieldDecls(
+          VarType(
+            Type(
+             int
+            ) [Type]
+          ) [VarType]
+          VarD(
+            VarDeclaration(
+             niz
+              Array(
+              ) [Array]
+            ) [VarDeclaration]
+          ) [VarD]
+          NoFieldDecl(
+          ) [NoFieldDecl]
+        ) [FieldDecls]
+      ) [FieldDecls]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDec]
+  ) [MethodDeclarations]
+) [Program]
+INFO  11:11:18,603 - ===================================
+INFO  11:11:18,608 - postoji ispravan main na liniji 1
+INFO  11:11:18,609 - ===================================
+INFO  11:11:18,614 - Parsiranje uspesno zavrseno!

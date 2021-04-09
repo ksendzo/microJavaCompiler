@@ -1,0 +1,52 @@
+INFO  11:14:19,096 - Compiling source file: C:\workspace\MJCompiler\test\program.mj
+INFO  11:14:19,186 - #2 program
+INFO  11:14:19,187 - #48 mj
+INFO  11:14:19,188 - #3 {
+INFO  11:14:19,190 - #13 void
+INFO  11:14:19,192 - #48 f
+INFO  11:14:19,194 - #6 (
+INFO  11:14:19,195 - #44 ?
+ERROR 11:14:19,198 - 
+Sintaksna greska na liniji 5, 8
+INFO  11:14:19,200 - #7 )
+INFO  11:14:19,202 - #3 {
+INFO  11:14:19,202 - #10 return
+INFO  11:14:19,203 - #5 ;
+ERROR 11:14:19,203 - Izvrsen oporavak do ) formalni parametar u liniji 5
+INFO  11:14:19,206 - #4 }
+INFO  11:14:19,208 - #48 int
+INFO  11:14:19,211 - #48 fi
+INFO  11:14:19,213 - #6 (
+INFO  11:14:19,214 - #7 )
+INFO  11:14:19,215 - #3 {
+INFO  11:14:19,216 - #10 return
+INFO  11:14:19,217 - #47 2
+INFO  11:14:19,219 - #5 ;
+INFO  11:14:19,220 - #4 }
+INFO  11:14:19,221 - #48 char
+INFO  11:14:19,221 - #48 fc
+INFO  11:14:19,221 - #6 (
+INFO  11:14:19,221 - #7 )
+INFO  11:14:19,221 - #3 {
+INFO  11:14:19,221 - #10 return
+INFO  11:14:19,222 - #49 'c'
+INFO  11:14:19,222 - #5 ;
+INFO  11:14:19,222 - #4 }
+INFO  11:14:19,222 - #13 void
+INFO  11:14:19,223 - #48 main
+INFO  11:14:19,223 - #6 (
+INFO  11:14:19,223 - #7 )
+INFO  11:14:19,223 - #48 int
+INFO  11:14:19,224 - #48 i
+INFO  11:14:19,225 - #8 ,
+INFO  11:14:19,227 - #48 j
+INFO  11:14:19,228 - #5 ;
+INFO  11:14:19,228 - #48 int
+INFO  11:14:19,230 - #48 niz
+INFO  11:14:19,230 - #35 [
+INFO  11:14:19,230 - #37 ]
+INFO  11:14:19,230 - #5 ;
+INFO  11:14:19,231 - #3 {
+INFO  11:14:19,231 - #4 }
+INFO  11:14:19,231 - #4 }
+INFO  11:14:19,235 - Postoji sintaksna greska

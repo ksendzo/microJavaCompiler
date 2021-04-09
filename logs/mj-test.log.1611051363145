@@ -1,0 +1,69 @@
+INFO  11:15:38,060 - Compiling source file: C:\workspace\MJCompiler\test\program.mj
+INFO  11:15:38,115 - #2 program
+INFO  11:15:38,115 - #48 mj
+INFO  11:15:38,116 - #3 {
+INFO  11:15:38,117 - #13 void
+INFO  11:15:38,118 - #48 f
+INFO  11:15:38,119 - #6 (
+INFO  11:15:38,120 - #8 ,
+ERROR 11:15:38,120 - 
+Sintaksna greska na liniji 5, 8
+INFO  11:15:38,120 - #48 int
+INFO  11:15:38,120 - #48 a
+INFO  11:15:38,120 - #7 )
+ERROR 11:15:38,121 - Izvrsen oporavak do , formalni parametar u liniji 5
+INFO  11:15:38,124 - #3 {
+INFO  11:15:38,124 - #10 return
+INFO  11:15:38,125 - #5 ;
+INFO  11:15:38,126 - #4 }
+INFO  11:15:38,127 - #48 int
+INFO  11:15:38,127 - #48 fi
+INFO  11:15:38,127 - #6 (
+INFO  11:15:38,127 - #7 )
+INFO  11:15:38,127 - #3 {
+INFO  11:15:38,128 - #10 return
+INFO  11:15:38,128 - #47 2
+INFO  11:15:38,130 - #5 ;
+INFO  11:15:38,131 - #4 }
+INFO  11:15:38,131 - #48 char
+INFO  11:15:38,131 - #48 fc
+INFO  11:15:38,131 - #6 (
+INFO  11:15:38,131 - #7 )
+INFO  11:15:38,132 - #3 {
+INFO  11:15:38,132 - #10 return
+INFO  11:15:38,132 - #49 'c'
+INFO  11:15:38,132 - #5 ;
+INFO  11:15:38,132 - #4 }
+INFO  11:15:38,132 - #13 void
+INFO  11:15:38,132 - #48 main
+INFO  11:15:38,132 - #6 (
+INFO  11:15:38,133 - #7 )
+INFO  11:15:38,133 - #48 int
+INFO  11:15:38,133 - #48 i
+INFO  11:15:38,134 - #8 ,
+INFO  11:15:38,135 - #48 j
+INFO  11:15:38,140 - #5 ;
+INFO  11:15:38,145 - #48 int
+INFO  11:15:38,146 - #48 niz
+INFO  11:15:38,146 - #35 [
+INFO  11:15:38,146 - #37 ]
+INFO  11:15:38,146 - #5 ;
+INFO  11:15:38,146 - #48 bool
+INFO  11:15:38,147 - #48 b
+INFO  11:15:38,147 - #5 ;
+INFO  11:15:38,147 - #3 {
+INFO  11:15:38,147 - #50 if
+INFO  11:15:38,147 - #6 (
+INFO  11:15:38,148 - #48 b
+INFO  11:15:38,148 - #11 +
+INFO  11:15:38,150 - #7 )
+ERROR 11:15:38,150 - 
+Sintaksna greska na liniji 20, 8
+INFO  11:15:38,150 - #48 i
+INFO  11:15:38,150 - #12 =
+INFO  11:15:38,150 - #47 2
+ERROR 11:15:38,150 - Sintaksna greska u uslovu na liniji 20
+INFO  11:15:38,152 - #5 ;
+INFO  11:15:38,152 - #4 }
+INFO  11:15:38,153 - #4 }
+INFO  11:15:38,153 - Postoji sintaksna greska

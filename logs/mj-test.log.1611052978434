@@ -1,0 +1,77 @@
+INFO  11:37:55,397 - Compiling source file: C:\workspace\MJCompiler\test\program.mj
+INFO  11:37:55,456 - #2 program
+INFO  11:37:55,456 - #48 mj
+INFO  11:37:55,456 - #32 class
+INFO  11:37:55,457 - #48 Klasa
+INFO  11:37:55,457 - #3 {
+INFO  11:37:55,458 - #48 int
+INFO  11:37:55,459 - #48 i
+INFO  11:37:55,460 - #5 ;
+INFO  11:37:55,462 - #4 }
+INFO  11:37:55,464 - #3 {
+INFO  11:37:55,464 - #13 void
+INFO  11:37:55,467 - #48 main
+INFO  11:37:55,468 - #6 (
+INFO  11:37:55,469 - #7 )
+INFO  11:37:55,469 - #3 {
+INFO  11:37:55,469 - #4 }
+INFO  11:37:55,470 - #4 }
+INFO  11:37:55,476 - Program(
+  ProgName(
+   mj
+  ) [ProgName]
+  StatictDeclList(
+    NoStaticDecl(
+    ) [NoStaticDecl]
+    ClassDecls(
+      ClassName(
+       Klasa
+      ) [ClassName]
+      NoExtends(
+      ) [NoExtends]
+      FieldDecls(
+        Fld(
+          VarType(
+            Type(
+             int
+            ) [Type]
+          ) [VarType]
+          VarD(
+            VarDeclaration(
+             i
+              NoArray(
+              ) [NoArray]
+            ) [VarDeclaration]
+          ) [VarD]
+        ) [Fld]
+        NoFieldDecl(
+        ) [NoFieldDecl]
+      ) [FieldDecls]
+      NoMethods(
+      ) [NoMethods]
+    ) [ClassDecls]
+  ) [StatictDeclList]
+  GlobalStart(
+  ) [GlobalStart]
+  MethodDeclarations(
+    NoMethodDecar(
+    ) [NoMethodDecar]
+    MethodDec(
+      MethodTypeName(
+        TVoid(
+        ) [TVoid]
+       main
+      ) [MethodTypeName]
+      NoFromParam(
+      ) [NoFromParam]
+      NoFieldDecl(
+      ) [NoFieldDecl]
+      NoStatements(
+      ) [NoStatements]
+    ) [MethodDec]
+  ) [MethodDeclarations]
+) [Program]
+INFO  11:37:55,483 - ===================================
+INFO  11:37:55,487 - postoji ispravan main na liniji 1
+INFO  11:37:55,487 - ===================================
+INFO  11:37:55,493 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,70 @@
+INFO  11:19:58,576 - Compiling source file: C:\workspace\MJCompiler\test\program.mj
+INFO  11:19:58,633 - #2 program
+INFO  11:19:58,633 - #48 mj
+INFO  11:19:58,633 - #48 int
+INFO  11:19:58,634 - #48 mika
+INFO  11:19:58,636 - #47 5
+ERROR 11:19:58,636 - 
+Sintaksna greska na liniji 3, 9
+INFO  11:19:58,636 - #8 ,
+INFO  11:19:58,636 - #48 zika
+INFO  11:19:58,636 - #47 6
+INFO  11:19:58,637 - #8 ,
+INFO  11:19:58,637 - #48 ika
+INFO  11:19:58,640 - #47 6
+INFO  11:19:58,640 - #48 s
+INFO  11:19:58,640 - #5 ;
+INFO  11:19:58,640 - #3 {
+INFO  11:19:58,640 - #13 void
+INFO  11:19:58,641 - #48 f
+INFO  11:19:58,641 - #6 (
+INFO  11:19:58,641 - #48 int
+INFO  11:19:58,641 - #48 a
+INFO  11:19:58,641 - #7 )
+INFO  11:19:58,641 - #3 {
+INFO  11:19:58,642 - #10 return
+INFO  11:19:58,642 - #5 ;
+INFO  11:19:58,642 - #4 }
+INFO  11:19:58,642 - #48 int
+INFO  11:19:58,642 - #48 fi
+INFO  11:19:58,642 - #6 (
+INFO  11:19:58,643 - #7 )
+INFO  11:19:58,643 - #3 {
+INFO  11:19:58,643 - #10 return
+INFO  11:19:58,644 - #47 2
+INFO  11:19:58,644 - #5 ;
+INFO  11:19:58,644 - #4 }
+INFO  11:19:58,644 - #48 char
+INFO  11:19:58,644 - #48 fc
+INFO  11:19:58,644 - #6 (
+INFO  11:19:58,644 - #7 )
+INFO  11:19:58,644 - #3 {
+INFO  11:19:58,645 - #10 return
+INFO  11:19:58,645 - #49 'c'
+INFO  11:19:58,645 - #5 ;
+INFO  11:19:58,646 - #4 }
+INFO  11:19:58,646 - #13 void
+INFO  11:19:58,646 - #48 main
+INFO  11:19:58,646 - #6 (
+INFO  11:19:58,646 - #7 )
+INFO  11:19:58,647 - #48 int
+INFO  11:19:58,647 - #48 i
+INFO  11:19:58,647 - #8 ,
+INFO  11:19:58,647 - #48 j
+INFO  11:19:58,648 - #5 ;
+INFO  11:19:58,648 - #48 int
+ERROR 11:19:58,648 - Sintaksa greska deklaracije promenljive na liniji 3
+INFO  11:19:58,651 - #48 niz
+INFO  11:19:58,651 - #35 [
+INFO  11:19:58,651 - #37 ]
+INFO  11:19:58,652 - #5 ;
+INFO  11:19:58,652 - #48 bool
+INFO  11:19:58,652 - #48 b
+INFO  11:19:58,653 - #5 ;
+INFO  11:19:58,653 - #3 {
+INFO  11:19:58,653 - #4 }
+INFO  11:19:58,655 - #4 }
+ERROR 11:19:58,656 - 
+Sintaksna greska na liniji 25, 0
+ERROR 11:19:58,656 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 25, 1
+INFO  11:19:58,656 - Postoji sintaksna greska
